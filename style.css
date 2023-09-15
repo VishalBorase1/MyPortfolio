@@ -1,0 +1,537 @@
+/* Reset default styles and set box-sizing to border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Global styles for the body */
+body {
+    background: rgb(2, 3, 63);
+    color: white;
+    letter-spacing: 0.2mm;
+}
+
+/* Header section */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container class for wrapping content with padding */
+.container {
+    padding: 10px 10%;
+}
+
+/* Styles for the navigation menu at the top */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.logo {
+    width: 100px;
+    padding-top: 0px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+/* Styles for navigation links in the menu */
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 246, 246);
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: rgb(220, 222, 233);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 2s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    margin-top: 10pxs;
+}
+
+.header-text h1 span {
+    color: red;
+}
+
+.header-text h1 span::selection {
+    color: yellow;
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.img-home {
+    height: 480px;
+    width: 580px;
+}
+
+/*-- ----------------about me--------------- */
+
+h1.sub-title {
+    color: Red;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+h1.sub-title1 {
+    color: Red;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: sans-serif;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Column 1 of the about section */
+.about-col-1 {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Image inside column 1 */
+.about-col-1 img {
+    width: 300px;
+    border-radius: 60px;
+    height: 400px;
+    filter: brightness(1.5);
+    margin-left: 15px;
+    margin-top: 70px;
+    border: #000000 solid 10px;
+}
+
+/* Column 2 of the about section */
+.about-col-2 {
+    flex-basis: 50%;
+}
+
+.about-col-2 p {
+    line-height: 1.6;
+    /* Increase line height for better readability */
+    font-size: 16px;
+    /* Adjust font size for smaller screens */
+    text-indent: 30px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 35px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Tab links (Skills, Experience, Education) */
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+/* Animation effect for active tab link underline */
+.tab-contents {
+    list-style: none;
+    margin: 10px 0;
+}
+
+ul li span {
+    color: red;
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+ul li {
+    padding-bottom: 12px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block
+}
+
+/*--------------------------skills-------------------------------*/
+.container-skills {
+    display: flex;
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 2px;
+    /* Add top padding */
+    padding-bottom: 2px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+    margin: 5px;
+}
+
+.html {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+.javascript {
+    width: 50%;
+    background-color: #513b91;
+}
+
+.mysql {
+    width: 70%;
+    background-color: #f44336;
+}
+
+.corejava {
+    width: 80%;
+    background-color: #1739a7;
+}
+
+/*--------------------------services------------------------*/
+
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: rgba(42, 41, 41, 0.653);
+    padding: 40px;
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+
+/*----------------------contact--------------------*/
+
+.icons {
+    height: 25px;
+    padding-right: 5px;
+    margin-right: 5px;
+    transition: transform 0.5s;
+}
+
+.icons:hover {
+    height: 30px;
+    color: red;
+    transform: translate(-5px);
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.info {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.bold {
+    font-size: 20px;
+}
+
+
+.btn.btn-2 {
+    display: inline;
+    background: rgb(231, 25, 25);
+    display: block;
+    margin-left: 9px;
+
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid red;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-right {
+    width: 100%;
+}
+
+.name-mail {
+    display: flex;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 4px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn-2 {
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form button {
+    padding: 0 45px;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    background: #262626;
+    margin-top: 20px;
+    line-height: 1.3;
+    /* for gap between two lines*/
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+    border: 0.5px solid rgba(128, 100, 100, 0.418);
+
+}
+
+/*------------------- small screen css------------------------*/
+.menu-top p {
+    display: none;
+}
+
+/*----------------------CSS  with media for small Screen--------------------*/
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 50%;
+        font-size: 24px;
+    }
+
+    .header-text p {
+        font-size: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 39px;
+        margin-top: 10px;
+    }
+
+    .menu-top p {
+        display: block;
+        font-size: 45px;
+    }
+
+    .menu-top .p1 {
+        font-size: 75px;
+    }
+
+    .img-home {
+        display: none;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 80px;
+        transition: 2s;
+    }
+
+    nav ul::after {
+        width: 0;
+    }
+
+    #sidemenu {
+        right: -419px;
+    }
+
+
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        display: block;
+        margin: 15px;
+        top: 20px;
+        font-size: 40px;
+        transition: font-size 0.5s ease;
+    }
+
+    nav ul li {
+        display: inline;
+        text-align: center;
+    }
+
+    nav ul li a::after {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        font-size: 62px;
+    }
+
+    nav ul p {
+        position: absolute;
+        top: 35px;
+        right: 50px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 20px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 18px;
+        margin-right: 30px;
+    }
+
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-left,
+    .contact-right {
+        /* Adjust layout for contact section on small screens */
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 5px 10%;
+    }
+
+}
