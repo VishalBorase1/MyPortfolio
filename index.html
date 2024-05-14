@@ -26,8 +26,10 @@
             </nav>
             <div class="flex">
                 <div class="header-text">
-                    <p>Full Stack Web Developer</p>
-                    <h1>Hi, I am<br><span>Vishal Borase</span><br> From India </h1>
+                    <h1> Hi, I'm<br><span>Vishal Borase</span></h1>
+                    <h3>
+                        <span id="element"></span><br>From India.
+                    </h3>
                 </div>
                 <div class="home-img">
                     <img class="img-home" src="Images/pic1.png" alt="home page img">
@@ -140,8 +142,9 @@
                 <div>
                     <h2>Swag of India - Ecommerce Website</h2>
                     <br>
-                    <p> Swag of India is a Ecommerce project are using HTML5, CSS3, JavaScript and   Bootstrap.
-                        There are a few important modules in the project like home page, image carousel, product listing page, product page, cart, page, wish list page etc </p>
+                    <p> Swag of India is a Ecommerce project are using HTML5, CSS3, JavaScript and Bootstrap.
+                        There are a few important modules in the project like home page, image carousel, product listing
+                        page, product page, cart, page, wish list page etc </p>
                     <a href="https://swagofindia.netlify.app/">Click on Project Link</a>
                 </div>
                 <br>
@@ -240,6 +243,12 @@
             closemenu();
         };
     </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer..', 'Java Developer..', 'Full Stack Web Developer..'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
-
 </html>
