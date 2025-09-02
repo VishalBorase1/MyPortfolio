@@ -152,12 +152,10 @@ h1.sub-title1 {
 
 /* Image inside column 1 */
 .about-col-1 img {
-    width: 300px;
     border-radius: 60px;
-    height: 400px;
-    filter: brightness(1.5);
+    height: 200px;
     margin-left: 15px;
-    border: #000000 solid 10px;
+    border: #000000 solid 5px;
 }
 
 /* Column 2 of the about section */
@@ -577,3 +575,4 @@ hr {
     }
 
 }
+
